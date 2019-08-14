@@ -17,9 +17,15 @@ class facebook{
 	}
 
 	public function verInformacion(){
-		echo "Nombre: " .$this->nombre . "<br>";
-		echo "Edad: " .$this->edad. "<br>";
-		echo "Password: " .$this->pass. "<br>";
+		echo "Nombre: "   . $this->nombre  .  "<br>";
+		echo "Edad: "     . $this->edad .  "<br>";
+		echo "Password: " . $this->pass .  "<br>";
+	}
+
+	// Metodo para cambiar la clave
+	private function cambiarPass($pass){
+		$this->pass = $pass;
+
 	}
 
 }
