@@ -21,5 +21,6 @@ persona::mostrar("Hola mundo");
 echo "<br>";
 auto::mostrar("heall");
 
+// 
 
 ?>
