@@ -19,10 +19,10 @@ spl_autoload_register(function($clase){
  $ruta =  "api/" . str_replace("\\", "/", $clase) . ".php";
  if (is_readable($ruta)) {
      # code...
-     require_once $ruta;
+     require_once($ruta) ;
  } else {
      # code...
-     echo "el archivo no existe";
+     echo " el archivo no existe";
  }
  
 }); 
@@ -31,5 +31,6 @@ spl_autoload_register(function($clase){
 models\persona::hola();
 
 //  llamando la la clase del controlador
-controllers\personascontrollers::hola();
+controllers\personasController::hola();
+// /personasController.php
 ?>
